@@ -48,8 +48,8 @@ def sqlQuery(query: str) -> pd.DataFrame:
 @st.cache_data(ttl=300)  # Cache for 5 minutes
 def load_events(min_significance: int = 0, days: int = 30) -> pd.DataFrame:
     """Load earthquake events for map display, filtered by significance."""
-    # For large date ranges, use longer timeout
-    timeout = 600 if days > 365 else 300
+    
+    
 
     query = f"""
         SELECT *
@@ -58,13 +58,13 @@ def load_events(min_significance: int = 0, days: int = 30) -> pd.DataFrame:
           AND event_time >= current_timestamp() - INTERVAL {days} DAY
         ORDER BY event_time DESC
     """
-    return sqlQuery(query, timeout=timeout)
+    return sqlQuery(query)
 
 
 @st.cache_data(ttl=300)
 def load_daily_summary(days: int = 30) -> pd.DataFrame:
     """Load daily summary statistics."""
-    timeout = 600 if days > 365 else 300
+    
 
     query = f"""
         SELECT *
@@ -72,7 +72,7 @@ def load_daily_summary(days: int = 30) -> pd.DataFrame:
         WHERE date >= current_date() - INTERVAL {days} DAY
         ORDER BY date
     """
-    return sqlQuery(query, timeout=timeout)
+    return sqlQuery(query)
 
 @st.cache_data(ttl=300)
 def load_regional_summary(min_events: int = 5) -> pd.DataFrame:
