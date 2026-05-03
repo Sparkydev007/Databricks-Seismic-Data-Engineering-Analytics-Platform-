@@ -296,16 +296,3 @@ Once the gold tables are populated, create a Genie space in Databricks:
 
 ---
 
-## License
-
-This project is for educational purposes. Feel free to use and modify for your own learning.
-
----
-
-## Support
-
-If you found this project helpful, consider:
-
-- ⭐ Starring this repository
-- 📚 Checking out my [Udemy courses](https://www.udemy.com/user/malvik-vaghadia/)
-- 🔗 Connecting on [LinkedIn](https://www.linkedin.com/in/malvik-vaghadia/)
