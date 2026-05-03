@@ -20,13 +20,6 @@ An end-to-end data engineering project on Databricks demonstrating a complete an
 
 This project demonstrates how to build a production-ready analytics platform on Databricks using real-time earthquake data from the USGS API.
 
-### What You'll Learn
-
-1. **End-to-End ETL Pipeline** - Medallion architecture (Bronze → Silver → Gold) with incremental processing using Delta Lake Change Data Feed (CDF)
-
-2. **Databricks App Deployment** - A Streamlit dashboard with 3D interactive globe visualisation, deployed as a Databricks App
-
-3. **AI-Ready Platform** - Structured data ready for AI/BI Genie spaces, enabling natural language queries
 
 ### Architecture
 
