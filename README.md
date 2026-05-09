@@ -89,7 +89,7 @@ earthquake_analytics/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/earthquake_analytics.git
+git clone https://github.com/Sparkydev007/Databricks-Seismic-Data-Engineering-Analytics-Platform-.git
 cd earthquake_analytics
 ```
 
